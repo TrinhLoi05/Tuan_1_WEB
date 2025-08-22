@@ -1,0 +1,89 @@
+<!-- Phần 1: HTML cơ bản
+1.	Tạo trang giới thiệu bản thân
+ Gồm: họ tên, ngày sinh, ảnh đại diện, sở thích, mô tả ngắn.
+
+2.	Tạo danh sách các môn học yêu thích
+ Sử dụng thẻ <ul> và <li>.
+
+3.	Tạo bảng thời khoá biểu
+ Dùng thẻ <table>, có các cột: Thứ, Môn học, Giờ học, Phòng học.
+
+4.	Tạo form đăng ký thông tin cá nhân
+ Gồm: tên, email, số điện thoại, giới tính, nút gửi.
+
+5.	Tạo liên kết điều hướng đến các trang khác nhau
+ Sử dụng thẻ <a> với các thuộc tính target, href.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+    <h1>Giới Thiệu Bản Thân</h1>
+    <p> <strong>Họ Tên:</strong> Trịnh Đăng Lợi</p>
+    <p> <strong>Ngày Sinh:</strong> 30-07-2005</p>
+    <img src="avatar.jpg" alt="avatar" width="200" height="200">
+    <p> <strong>Sở thích:</strong>Nghe nhạc, xem phim, đi camping</p>
+    <p> <strong>Mô Tả:</strong> Là một người hướng nội, sống nội tâm, biết lắng nghe, share, care.</p>
+
+    <h2>1.Các môn học yêu thích </h2>
+    <ul>
+        <li>Toán</li>
+        <li>Văn</li>
+        <li>Anh</li>
+    </ul>
+    
+    <h2>2.Thời Khóa Biểu </h2>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <tr>
+            <td><strong>THỨ</strong></td>
+            <td><strong>MÔN HỌC</strong></td>
+            <td><strong>GIỜ HỌC</strong></td>
+            <td><strong>PHÒNG HỌC</strong></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Toán </td>
+            <td>9h10-11h40</td>
+            <td>h10.4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Văn </td>
+            <td>9h10-11h40</td>
+            <td>h10.4</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Anh </td>
+            <td>9h10-11h40</td>
+            <td>h10.4</td>
+        </tr>
+    </table>
+
+    <h2>3.Form Đăng Ký Thông Tin Cá Nhân </h2>
+    <form method="Post" action="#" >
+        <div>
+            <label for="name">Họ Tên: </label>
+            <input type="text" id="name" name="name"> <br>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text"> <br>
+        </div>
+        <div>
+            <label for="number">Số điện thoại: </label>
+            <input type="number"> <br>
+        </div>
+        
+        <input type="submit"> <br>
+    </form>
+    <br>
+
+    <a href="https://www.w3schools.com/"target="_blank">  W3schools</a> <br>
+    <a href="https://www.google.com/" target="_blank"> google</a>
+    
+</body>
+</html>
