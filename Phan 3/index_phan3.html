@@ -1,11 +1,126 @@
+<!-- 
+Phần 3: Biểu mẫu nâng cao
+11.	Form đăng nhập
+ Gồm: username, password, nút đăng nhập.
+
+12.	Form khảo sát ý kiến người dùng
+ Sử dụng radio, checkbox, textarea, select.
+
+13.	Form đặt bàn quán ăn
+ Nhập tên, số người, ngày giờ, yêu cầu đặc biệt.
+
+14.	Form gửi phản hồi khách hàng
+ Kèm đánh giá sao (1–5), ý kiến, email.
+
+15.	Form thanh toán đơn hàng
+ Gồm thông tin cá nhân, địa chỉ, hình thức thanh toán.
+ 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tuan1Phan3</title>
 </head>
 <body>
-    
+    <!-- Câu 11 -->
+    <h2>Form Đăng Nhập</h2>
+        <label for="Username">Tên đăng nhập:</label><br>
+        <input type="text" name="Username" id="Username" required> <br><br>
+        <label for="password">Mật khẩu</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Đăng nhập</button>
+
+    <!-- Câu 12 -->
+     <h2>Form Khảo Sát</h2>
+     <form>
+        <p>Bạn thấy chất lượng dịch vụ như thế nào?</p>
+        <input type="radio" id="tot" name="danhgia" value="tot">
+        <label for="tot">Tốt</label><br>
+        <input type="radio" id="trungbinh" name="danhgia" value="trungbinh">
+        <label for="trungbinh">Trung bình</label><br>
+        <input type="radio" id="te" name="danhgia" value="te">
+        <label for="te">Tệ</label><br>
+        <p>Bạn quan tâm đến dịch vụ nào?</p>
+        <input type="checkbox" id="wifi" name="dichvu" value="wifi">
+        <label for="wifi">Wifi</label>
+        <input type="checkbox" id="doan" name="dichvu" value="doan">
+        <label for="doan">Đồ ăn</label>
+        <input type="checkbox" id="gia" name="dichvu" value="gia">
+        <label for="gia">Giá cả</label><br><br>
+
+        <label for="ghichu">Ý kiến khác:</label><br>
+        <textarea id="ghichu" name="ghichu" rows="4" cols="40"></textarea><br><br>
+
+        <label for="chon">Bạn biết đến chúng tôi qua:</label>
+        <select id="chon" name="chon">
+            <option value="fb">Facebook</option>
+            <option value="banbe">Bạn bè</option>
+            <option value="quangcao">Quảng cáo</option>
+        </select><br><br>
+
+        <button type="submit">Gửi khảo sát</button>
+     </form>
+     <!-- Câu 13 -->
+<h2>Form đặt bàn</h2>
+<form>
+    <label for="ten">Họ tên:</label><br>
+    <input type="text" id="ten" name="ten" required><br><br>
+
+    <label for="songuoi">Số người:</label><br>
+    <input type="number" id="songuoi" name="songuoi" min="1" max="20"><br><br>
+
+    <label for="thoigian">Ngày giờ:</label><br>
+    <input type="datetime-local" id="thoigian" name="thoigian"><br><br>
+
+    <label for="yeucau">Yêu cầu đặc biệt:</label><br>
+    <textarea id="yeucau" name="yeucau" rows="3"></textarea><br><br>
+
+    <button type="submit">Đặt bàn</button>
+</form>
+
+    <!-- Câu 14 -->
+<h2>Form phản hồi</h2>
+<form>
+    <p>Đánh giá dịch vụ (1 = tệ, 5 = rất tốt):</p>
+    <input type="radio" name="sao" value="1"> 1 
+    <input type="radio" name="sao" value="2"> 2 
+    <input type="radio" name="sao" value="3"> 3 
+    <input type="radio" name="sao" value="4"> 4 
+    <input type="radio" name="sao" value="5"> 5 <br><br>
+
+    <label for="ykien">Ý kiến của bạn:</label><br>
+    <textarea id="ykien" name="ykien" rows="4" cols="40"></textarea><br><br>
+
+    <label for="email">Email liên hệ:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <button type="submit">Gửi phản hồi</button>
+</form>
+
+    <!-- Câu 15  -->
+     <h2>Form thanh toán</h2>
+<form>
+    <label for="hoten">Họ tên:</label><br>
+    <input type="text" id="hoten" name="hoten" required><br><br>
+
+    <label for="sdt">Số điện thoại:</label><br>
+    <input type="tel" id="sdt" name="sdt" required><br><br>
+
+    <label for="diachi">Địa chỉ giao hàng:</label><br>
+    <textarea id="diachi" name="diachi" rows="3"></textarea><br><br>
+
+    <p>Hình thức thanh toán:</p>
+    <input type="radio" id="cod" name="thanhtoan" value="cod" checked>
+    <label for="cod">Thanh toán khi nhận hàng</label><br>
+    <input type="radio" id="card" name="thanhtoan" value="card">
+    <label for="card">Thẻ tín dụng/Ghi nợ</label><br>
+    <input type="radio" id="momo" name="thanhtoan" value="momo">
+    <label for="momo">Ví MoMo</label><br><br>
+
+    <button type="submit">Xác nhận đơn hàng</button>
+</form>
+
 </body>
 </html>

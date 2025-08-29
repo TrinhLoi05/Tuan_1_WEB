@@ -1,0 +1,124 @@
+<!-- 
+Phần 4: Dự án nhỏ
+16.	Trang bán hàng sản phẩm điện thoại
+ Hiển thị danh sách sản phẩm, giá, nút mua.
+
+17.	Trang thông tin du lịch một địa danh
+ Có tiêu đề, ảnh, mô tả, bản đồ (dùng iframe Google Map).
+
+18.	Trang tin tức đơn giản
+ Hiển thị tiêu đề bài viết, ảnh, nội dung ngắn, nút “Đọc tiếp”.
+
+19.	Trang lịch sự kiện
+ Dùng bảng hoặc danh sách để thể hiện các sự kiện sắp tới.
+
+20.	Tạo CV cá nhân bằng HTML
+ Gồm các phần: Thông tin cá nhân, Kỹ năng, Kinh nghiệm, Học vấn.
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan1Phan4</title>
+</head>
+<body>
+    <!-- Câu 16 -->
+     <h2>Cửa hàng điện thoại</h2>
+<div style="display: flex; gap: 20px;">
+    <div style="border:1px solid #ccc; padding:10px; width:200px;">
+        <img src="iphone16.webp" alt="iPhone 15" width="180">
+        <h3>iPhone 15</h3>
+        <p>Giá: 25,000,000đ</p>
+        <button>Mua ngay</button>
+    </div>
+    <div style="border:1px solid #ccc; padding:10px; width:200px;">
+        <img src="samsung.jpg" alt="Samsung S23" width="180">
+        <h3>Samsung Galaxy S23</h3>
+        <p>Giá: 20,000,000đ</p>
+        <button>Mua ngay</button>
+    </div>
+</div>
+
+     <!-- Câu 17 -->
+      <h2>Du lịch Đà Nẵng</h2>
+<img src="danang.jpg" alt="Đà Nẵng" width="500">
+<div>
+<p>Tọa lạc tại vùng Nam Trung Bộ, Đà Nẵng hội tụ đủ cả núi, đồng bằng, 
+    biển và là nơi đã lọt vào top một trong 20 thành phố sạch đẹp nhất
+     trên thế giới. Nhờ địa hình đa dạng và khung cảnh thiên nhiên tuyệt 
+     đẹp nên Đà Nẵng đã không ngừng thu hút du khách trong nước và ngoài 
+     nước hàng năm đặt tour du lịch Đà Nẵng đến khám phá tận hưởng kỳ nghỉ 
+     tuyệt vời nhất.</p>
+</div>
+
+
+<h3>Bản đồ Đà Nẵng</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8129550757156!2d108.22067907587342!3d16.06641318461895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c6721b3a77%3A0xc64b74c51e16f3af!2zxJDDoCBO4bq1bmcsIFZpZXRuYW0!5e0!3m2!1svi!2s!4v1693665800000" 
+    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <!-- câu 18 -->
+       <h2>Tin tức công nghệ</h2>
+<article style="border-bottom:1px solid #ccc; padding:10px;">
+    <h3>Apple ra mắt iPhone mới</h3>
+    <img src="iphone17.png" alt="iPhone" width="300">
+    <p>Apple vừa chính thức ra mắt mẫu iPhone mới với nhiều tính năng nổi bật...</p>
+    <button>Đọc tiếp</button>
+</article>
+
+<article style="border-bottom:1px solid #ccc; padding:10px;">
+    <h3>Samsung công bố Galaxy S23</h3>
+    <img src="samsung.jpg" alt="Samsung" width="300">
+    <p>Samsung giới thiệu Galaxy S23 với hiệu năng mạnh mẽ, camera sắc nét...</p>
+    <button>Đọc tiếp</button>
+</article>
+
+       <!-- Câu 19 -->
+        <h2>Lịch sự kiện</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Ngày</th>
+        <th>Sự kiện</th>
+        <th>Địa điểm</th>
+    </tr>
+    <tr>
+        <td>01/09/2025</td>
+        <td>Khai giảng năm học</td>
+        <td>Đại học Công nghiệp TP.HCM</td>
+    </tr>
+    <tr>
+        <td>05/09/2025</td>
+        <td>Hội thảo tiếng anh</td>
+        <td>Hồ Chí Minh</td>
+    </tr>
+</table>
+
+        <!-- Câu 20 -->
+         <h1>Trịnh Đăng Lợi</h1>
+<p>Email: trinhloi@gmail.com | Điện thoại: 0123456789</p>
+<hr>
+
+<h2>Thông tin cá nhân</h2>
+<p>Tôi là một sinh viên năm 3 ngành Hệ thống thông tin đam mê công nghệ và thích học hỏi.</p>
+
+<h2>Kỹ năng</h2>
+<ul>
+    <li>Python</li>
+    <li>Java</li>
+    <li>SQL</li>
+</ul>
+
+<h2>Kinh nghiệm</h2>
+<ul>
+    <li><strong>Công ty 909 Trường Chinh (2023–2025)</strong> – Thu ngân</li>
+    <li><strong>Dự án cá nhân</strong> – Xây dựng website bán hàng</li>
+</ul>
+
+<h2>Học vấn</h2>
+<ul>
+    <li>Đại học Công nghiệp TP.HCM – Ngành CNTT (2023–2025)</li>
+</ul>
+
+</body>
+</html>
